@@ -1,0 +1,29 @@
+<% time = Time.now %>
+<html>
+	<head>
+		<title>Chat</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<h1>Chat</h1>
+		<small>Por Lucas & Giulianno</small>
+
+		<br>
+		<%= yield %>
+		<br>
+
+		<hr>
+
+		<footer>
+			Chat | Lucas e Giulianno
+			<br>
+			<br>
+			Data: <%= time.strftime('%Y-%m-%d') %> ISO 8601.
+			<br>
+			Hora: <%= time.strftime('%H:%M:%S') %>.
+			<br>	
+			Unix time: <%= time.to_i %>
+		</footer>
+	</body>
+</html>

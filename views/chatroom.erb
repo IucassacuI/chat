@@ -1,0 +1,20 @@
+<br>
+<div id="chatbox">
+     <embed src="/log" id="chatlog"></embed>
+     <br>
+     <form method="post" action="/send">
+     	   <input type="text" name="msg">
+     	   <button type="submit">Enviar</button>
+     </form>
+     <button>Atualizar</button>
+     <button>Sair</button>
+</div>
+
+<div id="online">
+     <h4>Usuários Online</h4>
+     <ol>
+          <% onlineusr.each do |user| %>
+	     <li><%= user %>
+	  <% end %>
+     </ol>
+</div>

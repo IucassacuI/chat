@@ -1,0 +1,24 @@
+<h3>Entrar</h3>
+
+<form action="/login" method="POST">
+      Usuário: <input type="text" name="user">
+      <br>
+      Senha: <input type="password" name="pass">
+      <br>
+      <button type="submit">Entrar</button>
+</form>
+
+
+<h3>Criar Conta</h3>
+
+<% if newusr %>
+<p style="color: green">Conta criada. </p>
+<% end %>
+
+<form action="/signup" method="POST">
+      Usuário: <input type="text" name="user"><sup style="color: red">* Mínimo: 6 caracteres</sup>
+      <br>
+      Senha: <input type="password" name="pass">
+      <br>
+      <button type="submit">Criar</button>
+</form>

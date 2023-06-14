@@ -1,0 +1,13 @@
+<ul>
+	<% msgs.each do |msg| %>
+	   <% user = msg.split[0] %>
+	   <% time = msg.split[1] %>
+	   <% message = msg.split[2..].join(' ') %>
+
+	   <li><div class="message">
+	   	    <i class="user"><%= user %></i>
+		    <p class="message"><%= message %></p>
+		    <i><%= time %></i>
+	       </div>
+	<% end %>
+</ul>
